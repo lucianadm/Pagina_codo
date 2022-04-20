@@ -1,0 +1,240 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+header{
+   background-image: url("../figs/images.jfif");
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap; 
+    border: solid #777 1.5px;
+    min-height: 130px;
+    position:fixed;
+    left: 0;
+    top: 0;
+}
+
+
+    
+.elLogo img{
+    width: auto;
+    height: 100px;
+    float: left;
+    padding: 3px;
+    background-color: aliceblue;
+    margin-top: 12px;
+    margin-left: 40px;
+    border: solid 1px rgb(5, 5, 5);
+    border-radius: 8px;
+}
+
+.elLogo img:hover{
+    width: auto;
+    height: 102px;
+    float: left;
+    padding: 3px;
+    background-color: aliceblue;
+    margin-top: 12px;
+    margin-left: 40px;
+    border: solid 1px rgb(247, 6, 6);
+    border-radius: 8px;
+}
+
+.logoICYTE{
+    padding: 0;
+}
+
+
+.logoICYTE img {
+    width: 70%;
+    padding: 1px ;
+    background-color: aliceblue;
+    float: left;
+    margin-top: 10px;
+    margin-left: 50px;
+    border: solid 1px rgb(5, 5, 5);
+    border-radius: 4px;
+}
+
+.logoICYTE img:hover {
+    width: 72%;
+    padding: 1px ;
+    background-color: rgb(69, 96, 120);
+    float: left;
+    border: solid 1px rgb(232, 9, 9);
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 640px) { /*640 píxeles de ancho (móviles).*/
+    .menu-ppal { background: green;       /*640 píxeles y 1280 píxeles de ancho (tablets).*/
+    }                                 /*mayores a 1280 píxeles (desktop).*/
+    }
+
+.menu-ppal ul{
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.menu-ppal ul li{
+    display: inline;
+}
+
+.menu-ppal ul li a{
+    font-weight: bold;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    box-shadow: 2px 3px 0 0 rgba(52, 52, 52, 0.587);
+    border: solid rgb(215, 213, 213) 1.5px;
+    border-radius: 4px;
+    color: rgb(250, 250, 250);
+    background-color: rgba(204, 204, 204, 0);
+}
+
+.menu-ppal ul li a:hover{
+    color: black;
+    padding: 0.5rem 2rem 1.5rem 2rem;
+    border: solid rgb(11, 11, 11) 1.5px;
+    background-color: rgba(242, 239, 244, 0.393);
+}
+main{
+    margin-top: 150px;
+    min-height: 1000px;
+    width: 100%;
+  }
+
+  /*index*/
+.contenedor{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap; /* Comportamiento por defecto: nowrap */   
+}
+
+.seccion1{
+    min-height: 300px;
+    width: 100%;
+    padding: 1rem;
+    text-align: justify;
+}
+.alado{
+    width: 30%;
+      
+}
+.alado img{
+    width: 60%;
+    padding: 15px;
+    
+      
+}
+/*investigadores*/
+.inv1 {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap; /* Comportamiento por defecto: nowrap */
+    }
+    .foto1 {
+        border: solid #777 1px;
+        width: 7%;
+        }
+.foto1 img{
+        width: 100%;
+        height: auto;
+        }
+    .biblio1 {
+        padding: 1rem;
+        margin-left: 10px;
+        background: rgb(248, 247, 247);
+        width: 86%;
+        text-align: justify;
+     }
+     .foto1:hover{
+        height: auto;
+        border: solid 2px rgb(234, 36, 36);
+        }
+
+     /*Publicaciones*/
+     .lista-pub ul li{
+        font-size:0.5rem;
+        padding: 4rem;
+     }
+
+     .titulo-pub{
+         padding:10px;
+         text-align: center;
+     }
+.art-ISI{
+        padding:10px;
+    }
+
+    /*contacto*/
+    .seccion-cont{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap; /* Comportamiento por defecto: nowrap */   
+
+    }
+    .mapa{
+        padding:20px;
+        width: 40%;
+        height: auto;
+        text-align: justify;
+    }
+    .mapa iframe{
+        padding:20px;
+        width: 100%;
+        height: auto;
+    }
+
+      .proy {
+     
+        padding: 20px;
+        text-align: center;
+        width:80%;
+        background-color: rgb(132, 85, 131);
+        color:aliceblue;
+        margin-bottom: 20px;
+        margin-left: auto;
+         margin-right:auto;
+
+    }
+    .proy:hover {
+        padding: 20px;
+        text-align: center;
+        width:80%;
+        background-color: rgb(131, 39, 129);
+        color:aliceblue;
+        margin-bottom: 20px;
+
+    }
+    .proy a{
+        color:aliceblue;
+        text-decoration: none;
+        padding: 20px;
+    }
+
+    /*proyecto 1*/
+    .contiene-datos-proy{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap; 
+
+    }
+  .descripcion{
+        text-align: justify;
+        width:60%;
+        padding: 15px;
+    }
+
+    .datos{
+        text-align: justify;
+        background-color: rgb(166, 56, 118);
+        color: aliceblue;
+        width: 30%;
+        padding: 25px;
+        
+    }
