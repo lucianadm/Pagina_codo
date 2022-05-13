@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <link rel="stylesheet" href="../ext/aos.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="https://kit.fontawesome.com/8e806138a9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
+    <title>Oferta Proyectos Finales de Grado</title>
+  
+</head>
+<body>
+    <nav class="navbar fixed-top  navbar-expand-lg navbar-light lg-light" style="background-color: #8aabc2; font-size: 1.6rem;">
+        <div class="container-fluid">
+          <a class="navbar-brand" style=" font-size: 3rem; padding-left: 1rem; " href="../index.html">
+            <img src="../figs/logo.JPG" alt="LSC" width="90" height="auto" class="d-inline-block align-text-top">LSC</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" style=" padding-left: 3rem;"  href="Proyectos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Proyectos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Proyectos.html">Proyectos de Investigación</a></li>
+                  <li><a class="dropdown-item" href="ProyFin.html">Proyectos Finales de Grado</a></li>
+                  <li><a class="dropdown-item" href="ProyPhD.html">Tesis de Posgrado</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " style=" padding-left: 3rem;"  href="Investigadores.html">Investigadores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " style=" padding-left: 3rem;"  href="Publicaciones.html">Publicaciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " style=" padding-left: 3rem; padding-right: 4rem;"  href="Contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+    
+          <div data-aos="fade-down">
+            <div class="logoICYTE"> 
+               <a href="https://icyte.conicet.gov.ar/" target="_blank"> <img src="../figs/descarga.png" alt="logo ICYTE"/></a>
+            </div>  
+           </div>
+        </div>
+      </nav>
+
+
+
+    <main>  
+        <h1>Oferta Proyectos de Posgrado</h1>
+        <ul  class="proyectos-encurso">
+            <li> <details>
+            <summary>Desarrollo de métodos caóticos para la asignación de canales en Radio Cognitiva</summary>
+            <p>En las últimas décadas, el uso de aplicaciones inalámbricas ha aumentado rápidamente, lo que ha llevado a una saturación de los canales, o bandas del espectro necesarios para realizar las comunicaciones. Esta mayor demanda de ancho de banda ha resultado en dos problemas principales: escasez de espectro y subutilización. Ante esta dificultad surge la técnica llamada Radio Cognitiva que permite a usuarios sin licencia (usuarios secundarios, US) utilizar temporalmente una banda de espectro con licencia, mientras los usuarios con licencia (usuarios primarios, UP) estén inactivos o la interferencia recibida por los UP de transmisiones secundarias sea tolerable [1,2].</p>
+<p>Seleccionar la mejor banda de frecuencia para una transmisión dada requiere tomar decisiones de preferencia sobre el conjunto de “huecos” disponibles en el espectro, esto implica evaluar los diferentes atributos de los canales, como la interferencia, el error de bit y la intensidad de la señal, entre otros, para encontrar un canal de calidad. También se debe considerar los requisitos de calidad de servicio especificados por los US.  Este procedimiento es fundamental en la performance final del sistema, ya que, por ejemplo, un número alto de cambios de canal aumentará el consumo de energía de los US debido al proceso de adaptación a cada nuevo canal [3].</p>
+<p>En la actualidad, las técnicas utilizadas para la asignación de canales se basan en: teoría de juegos, programación lineal y no lineal, heurísticas, red basada en gráficos, algoritmos genéticos, algoritmos evolutivos y computación flexible. En el caso de los algoritmos basados en la teoría de juegos el objetivo es encontrar la solución óptima para el problema de asignación de canales. Se emplea tanto para decisiones cooperativas como no cooperativas entre US. En el caso cooperativo todos los jugadores están preocupados por los beneficios generales y no los propios. En el juego no cooperativo cada usuario se preocupa principalmente por sus beneficios personales y toman sus decisiones de manera competitiva y egoísta. La mayoría de los juegos alcanza un estado en el que ningún usuario puede aumentar su función de utilidad, lo que significa que han alcanzado el estado de equilibrio o estabilidad, llamado equilibrio de Nash [4]. En la programación lineal se busca optimizar una función objetivo lineal sujeta a restricciones de igualdades y desigualdades lineales. La formulación del problema en este caso es fácil y simple. Algunos algoritmos actuales de asignación de canales emplean programación lineal binaria y programación lineal entera mixta para formular el problema [5]. En el caso de Programación no lineal la función objetivo a optimizar o algunas de las restricciones son no lineales [6]. Cuando se prioriza acelerar el proceso de asignación de espectro o cuando una búsqueda exhaustiva no es práctica se emplean métodos heurísticos. Las técnicas heurísticas pueden proporcionar una solución casi óptima a un costo computacional razonable para problemas algorítmicamente complejos [7]. Para resolver problemas de asignación de espectro mediante redes basadas en gráficos, se utilizan varios métodos. El más común es de coloración de gráficos, donde el gráfico es unidireccional o bidireccional según las características del algoritmo. Los vértices corresponden a los US que comparten el espectro y los bordes muestran la interferencia entre ellos [8]. Los algoritmos genéticos son técnicas de búsqueda aleatoria utilizadas para encontrar soluciones óptimas. El uso del algoritmo genético es bastante apropiado en el contexto de RC para controlar y evitar interferencias en el problema de asignación de canales [9]. Los algoritmos evolutivos simulan la evolución de estructuras individuales a través de procesos de selección, recombinación y reproducción de mutaciones. En este caso se emplean diferentes algoritmos evolutivos como colonia de hormigas, optimización del enjambre de partículas y colonia de abejas [10]. Otro enfoque es a través de la optimización basada en computación flexible, en el cual se utilizan diversos esquemas que emplean técnicas inteligentes como inteligencia artificial, redes neuronales y sistemas difusos [11].
+Sin embargo, el problema de la asignación del espectro está todavía lejos de ser definitivamente resuelto pues se enfrenta a grandes desafíos entre los que cabe destacar la naturaleza aleatoria del canal inalámbrico, o las incertidumbres relativas a la disponibilidad de los huecos espectrales pues poco se conoce sobre la estadística de su aparición y desaparición. Por todo ello, es necesario desarrollar nuevas técnicas que sean rápidas, adaptativas y fiables. Es por ello que recientemente han surgido métodos que buscan nuevas alternativas, como los basados en caos y sistemas no lineales. Tales como, algoritmos evolutivos optimizados mediante caos [20], también proponen un algoritmo firefly mejorado mediante el uso del mapa Logístico, [20]. Además existen propuestas de usar algoritmos genéticos caóticos acoplados [21], método de coloración de gráficos mediante sistemas caóticos [22,23], algoritmo genético caótico [24], algoritmo de optimización de enjambre de partículas mejorado mediante caos [25], entre otros.</p>
+<p>Por otra parte, la tecnología de Radios Definida por Software (Software Defined Radio, SDR) es un paso necesario para el desarrollo de la Radio Cognitiva [2]. Los sistemas SDR proporcionan flexibilidad para reconfigurar la cadena de comunicación de acuerdo con el estándar inalámbrico requerido sin la necesidad de cambiar la plataforma de hardware ya que varios de sus componentes son implementados en software [26,27]. </p>
+<p>En este plan de trabajo se propone el desarrollo de algoritmos de asignación de espectro basados en caos. La principal hipótesis de trabajo es que es posible el desarrollo de nuevas metodologías y técnicas para la asignación adecuada de los canales de comunicación en cuanto a sus características físicas empleando herramientas de sistemas caóticos y herramientas derivadas de la teoría de la información y de los sistemas no lineales.</p>
+<p>La directora propuesta lidera un grupo de investigación que viene trabajando en el tema de sistemas alineales, caóticos, y ha realizado aportes originales en el área. También tiene amplia experiencia en la implementación de sistemas caóticos en sistemas digitales, principalmente en FPGA [28-41]. En cuanto al codirector propuesto posee amplia experiencia en el desarrollo de sistemas de comunicaciones, técnicas de control de errores en esquemas de codificación y cifrado de datos [42-47]. Ambos, junto con el grupo de investigación en el que el becario se inserta vienen trabajando en el tema de Radio Cognitiva y Software Defined Radio [48]. En cuanto al becario cuenta con experiencia en la temática ya que ha realizado una maestría en instrumentos satelitales y un curso de radios cognitivas con SDR como se puede ver en su cv.</p>
+Referencias Bibliográficas.
+<ul class="referencias">
+<li>[1] Sridhara, K., Chandra, A., & Tripathi, P. S. (2008). Spectrum challenges and solutions by cognitive radio: An overview. Wireless Personal Communications, 45(3), 281-291.
+<li>[2] Mitola J. III and G.Q. Maguire. Cognitive radio: making software radios more personal. IEEE Personal Communications, Vol. 6 (4), pp. 13-18, August 1999.
+<li>[3] Singh, W. N., & Marchang, N. (2019). A review on spectrum allocation in cognitive radio network.International Journal of Communication Networks and Distributed Systems, 23(2), 172-193.
+<li>[4] Hongshun, Z. and Xiao, Y. (2010) ‘Advanced dynamic spectrum allocation algorithm based on potential game for cognitive radio’, 2nd International Symposium on Information Engineering and Electronic Commerce (IEEC), pp.1–3, IEEE.
+<li>[5] Irwin, R.E., MacKenzie, A.B. and DaSilva, L.A. (2013) ‘Resource-minimized channel assignment for multi-transceiver cognitive radio networks’, IEEE J. Sel. Areas Commun., Vol. 31, No. 3.
+<li>[6] Chen-li, D., Guo-an, Z., Jin-yuan, G. and Zhi-hua, B. (2009) ‘A route tree-based channel assignment algorithm in cognitive wireless mesh networks’, International Conference on Wireless Communications and Signal Processing, Nanjing, pp.1–5.
+<li>[7] Saleem, Y., Bashir A., Ahmed, E., Qadir, J. and Baig, A. (2012) ‘Spectrum-aware dynamic channel assignment in cognitive radio networks’, Int. Conf. on Emerging Tech., Islamabad, pp.1–6.
+<li>[8] Zhao, C., Zou, M., Shen, B., Kim, B. and Kwak, K. (2008) ‘Cooperative Spectrum allocation in centralized cognitive networks using bipartite matching’, Glob Telecommunications Conference.
+<li>[9] Elhachml, J. and Guennon, Z. (2016) ‘Cognitive radio spectrum allocation using genetic algorithm’, EURASIP Journal on Wireless Communication and Networking, Vol. 133, No. 1.
+<li>[10] Modi, S. and Murmu, M.K. (2017) ‘Multi-SUs interference avoidance spectrum handover algorithm using ant colony method in cognitive radio networks’, 8th Int. Conf. on Comp., Comm. and Net. Tech. (ICCCNT), Delhi, pp.1–7.
+<li>[11] Chowdhury, S.A., Benslimane, A. and Akhter, F. (2017) ‘Throughput maximization of cognitive radio network by conflict-free link allocation using neural network’, IEEE Int. Conf. on Com. (ICC).
+<li>[19] Tegou, T. I., Tsiflikiotis, A., Vergados, D. D., Siakavara, K., Nikolaidis, S., Goudos, S. K., ... & Obaidat, M. (2018). Spectrum allocation in cognitive radio networks using chaotic biogeography-based optimisation. IET Networks, 7(5), 328-335.
+<li>[20] Wang, Z., Liu, D., & Jolfaei, A. (2020). Resource allocation solution for sensor networks using improved chaotic firefly algorithm in IoT environment. Computer Communications.
+<li>[21] Yun-Xiao, Z., Jie, Z., & Chang-Chang, Z. (2010). Cognitive radio resource allocation based on coupled chaotic genetic algorithm. Chinese Physics B, 19(11), 119501.
+<li>[22] Yang, F., Wang, M., & Wang, S. (2012, July). Aggregated spectrum assignment algorithm based on chaotic system in cognitive radio.(2012) Int. Conf. on Comp., Meas., Cont. and Sens. Net.. IEEE.
+<li>[23] Guo, L., Chen, Z., & Huang, L. (2018). A novel cognitive radio spectrum allocation scheme with chaotic gravitational search algorithm. International Journal of Embedded Systems, 10(2), 161-167.
+<li>[24] Jegede, O. D., Ferens, K., & Kinsner, W. (2013). A chaotic genetic algorithm for radio spectrum allocation. In Proceedings of the International Conference on Genetic and Evolutionary Methods.
+<li>[25] Tang, M., & Xin, Y. (2016). Energy efficient power allocation in cognitive radio network using coevolution chaotic particle swarm optimization. Computer Networks, 100, 1-11.
+<li>[26] W.H.W. Tuttlebee. Software Defined Radio: Enabling Technologies. Ed. Wiley. Inglaterra. 2002. 
+<li>[27] H. Tsurumi and Y. Suzuki. Broadband RF stage architecture for software-defined radio in handheld terminal applications. IEEE Communications Magazine. Vol 37(2), Feb 1999. 
+<li>[28] L. De Micco, D. Petruzzi, J. Castiñeira y H. A. Larrondo “Randomness of FSSM over GF(4) and quality of hopping turbo codes”, IET Comm.. Volume 7, Issue 9, 11 June 2013, p. 783 – 790, 
+<li>[29] K. Patat y L. De Micco “Comparison of classical and chaotic sequences for DSSS: hardware implementation”. Argentina. 2015. Foro Tecnológico, Libro. CASE 2015.  ISBN: 978-987-45523-3-4.
+<li>[30] M. Antonelli y L. De Micco “Cripto-codificación caótica variante en el tiempo” uEA2012 
+<li>[31] L. De Micco, H. A. Larrondo, D. Petruzzi, J. Castiñeira Moreira “Máquinas Secuenciales de Estados Finitos de alta aleatoriedad para el diseño de códigos turbo” RPIC 2011.
+<li>[32] L. De Micco,  H. A. Larrondo, O. A. Rosso y A. Plastino “Espectro esparcido mediante generadores caóticos de números aleatorios” Reunión Nacional de la AFA 2010.
+<li>[33] L. De Micco, C. M. Arizmendi, H.A. Larrondo “Statistical characterization of pseudorandom sequences used in spread spectrum communication scheme” LASSPIA2007, 2007.
+<li>[34] L. De Micco, R. A. Petrocelli, C. M. Arizmendi, H. A. Larrondo “Sistemas de espectro esparcido usando caos” IIIWorkshop Mecánica Estadística, IFLP, 2007, La Plata, Argentina.
+<li>[35] L. De Micco, M. Antonelli y H. A. Larrondo "Stochastic Degradation of the Fixed-point version of 2D-Chaotic Maps", Chaos, Solitons and Fractals. ISSN: 0960-0779 Volume 104, 2017.
+<li>[36]  L. De Micco e Hilda A. Larrondo “Síntesis e Implementación en FPGA de un mapa caótico con PDF Gaussiana”, II Congreso de  Microelectrónica Aplicada 2011.
+<li>[37] L. De Micco y H. A. Larrondo “FPGA Implementation of a Chaotic Oscillator Using RK4 Method”. VII Southern Programmable Logic Conference SPL 2011, 13-15 Abril 2011. Argentina. IEEE Xplore.
+<li>[38] L. De Micco, O. G. Zabaleta, C. M. González, C. M. Arizmendi y H. A. Larrondo “Estocasticidad de un atractor caótico determinista implementado en FPGA”. Proceedings de XVI IBERCHIP 2010.
+<li>[39] O. G. Zabaleta, L. De Micco, C. M. González, C. M. Arizmendi y H. A. Larrondo “Ruido 1/fd implementado en FPGA”. Proceedings de XV Iberchip. Ed. Fernando G. Tinettii  2009. 
+<li>[40] O. G. Zabaleta, L. De Micco, C. M. González, C. M. Arizmendi y H. A. Larrondo “Implementación en FPGA de un generador de ruido coloreado”. Proceedings of Designer’s Forum. IV Southern Programmable Logic Conference (SPL08) ISBN 978-84-612-2376-3.pp 
+<li>[41] “Methodology for FPGA Implementation of a Chaos-based AWGN Generator”, libro: FPGA Technologies for High Performance Instrumentation. L. De Micco, H. A. Larrondo. Discovery. 2016.
+<li>[42] Arnone, L.; González, C.; Gayoso, C.; Castiñeira M. J. and Liberatori, M. “Security and BER performance trade-off in Wireless communication systems applications,” Lat.  Am. App. Res., 2009.
+<li>[43] Arnone, L., Gayoso, C., González, C., Castiñeira M. J. and Liberatori, M. C. “Analisys and Fpga Implementation of Combined Error-Control and Encryption Schemes,” South. Conf. on Prog. Logic.
+<li>[44] Liberatori, M., Otero, F., Bonadero, J. C., Castiñeira M. J., “AES-128 cipher. High speed, low cost FPGA implementation,” Proceedings of the FPGA Designer Forum ISBN: 978-4244-0606-7.
+<li>[45] Liberatori, M. C., Arnone, L.,  Castiñeira M., J. and Farrell, P. G.. “Soft Distance Metric Decoding of Polar Codes”, Cryptography and Coding, Proc. of the 15th IMA Int. Conf., IMACC 2015 Oxford.
+<li>[46] Ribas, R. Á., Gelosi, I. E., Liberatori, M. C., Coppolillo, L., Uriz, A. J., & Moreira, J. C. (2019, September). A Genetic Algorithm Decoder for Low-Density Parity-Check Codes Over an Impulse Noise Channel. In 2019 XVIII Workshop on Information Processing and Control (pp. 19-24). IEEE.
+<li>[47] Liberatori, M. C.; Arnone, L. J.; Castiñeira Moreira, J.; Farrell, P. G. Non-Statistical Euclidean-Distance SISO Decoding of Error-Correcting Codes Over Gaussian and other Channels International journal of Computer Science, Engineering and Applications; 2019
+<li>[48] M. Antonelli, J. Castiñeira y L. De Micco 'Sensado de espectro en Radio Cognitiva mediante Diagramas de Recurrencia'. Congreso Argentino de Sistemas Embebidos CASE2020. Agosto 2020, modalidad Virtual.
+</ul>
+
+          </details></li>  
+
+       
+
+    </main>  
+    <footer>
+        <div class="datos-contacto">
+          <hr>
+            <p>lsc.icyte@gmail.com</p>
+        </div>
+        <div id="redes"></div>
+    </footer> 
+      <!--Aca van los js-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script src="../ext/aos.js"></script> <!--para q ande el movimiento del logo icyte-->
+      <script src="../js/index.js"></script><!--para q ande el movimiento del logo icyte-->
+  
+</body>
+</html>
