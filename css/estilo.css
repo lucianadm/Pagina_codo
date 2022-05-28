@@ -166,21 +166,23 @@ margin-left: 1rem;
     }
 
     /*contacto*/
-    .direccion{
-
-        padding:2rem;
-        text-align: justify;
+    .boton{
 
     }
-    .mapa{
-        padding:20px;
-        width: 40%;
-        height: auto;
-        text-align: justify;
+    .elform{
+        padding: 0.01rem;
+        color:blueviolet;
+        font-weight: bold;
     }
+    .icyte{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+  
     .mapa iframe{
-        padding:20px;
-        width: 100%;
+        padding:2px;
+        width: 40%;
         height: auto;
     }
     .cont-proy{

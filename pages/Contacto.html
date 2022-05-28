@@ -16,6 +16,7 @@
 
 </head>
 <body>
+
   <nav class="navbar fixed-top  navbar-expand-lg navbar-light lg-light" style="background-color: #8aabc2; font-size: 1.6rem;">
       <div class="container-fluid">
         <a class="navbar-brand" style=" font-size: 3rem; padding-left: 1rem; " href="../index.html">
@@ -54,34 +55,79 @@
          </div>
       </div>
     </nav>
+  
     <main>
- 
-        <div class="row">
-          <div  class="col-md-6">
-            <div class="direccion">
-            <h4>El Laboratorio de Sistemas Caóticos pertenece al ICYTE el cual esta ubicado en la Facultad de Ingeniería de la Universidad Nacional de Mar del Plata.</h4>
+      <div class="container">
+      <div class="row">
+        <div  class="col-md-12">
+        <h5>El Laboratorio de Sistemas Caóticos pertenece al  <a class="icyte" href="https://icyte.conicet.gov.ar/" target="_blank"> ICYTE  </a> el cual esta ubicado en la Facultad de Ingeniería de la Universidad Nacional de Mar del Plata.</h5>
             <br>
             <hr>
-            <p>Teléfono: <br><b>+54 223 4869900 (int 257) </b><br>
-                Dirección: <br><b>Juan B. Justo 4302<br>
-                Mar del Plata CP(7600)<br>
-                        Argentina</b><br>
-                Email: <br><b>lsc.icyte@gmail.com</b>      </p>
-             </div>
-             </div>
-              <div  class="col-md-6">
-                <div  class ="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.5036424042933!2d-57.58360848530328!3d-38.01203655318645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dec67072377d%3A0xc3c80a9a9de624d3!2sFacultad%20de%20Ingenier%C3%ADa!5e0!3m2!1ses!2sar!4v1650235731110!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-            </div>
+            <br>
+      </div>
+    </div>
+   
+    <div class="row">
+      <div  class="col-md-4">
+       
+        
+        <p>Teléfono: <br><b>+54 223 4869900 (int 257) </b><br>
+            Dirección: <br><b>Juan B. Justo 4302<br>
+            Mar del Plata CP(7600)<br>
+                    Argentina</b><br>
+            Email: <br><b>lsc.icyte@gmail.com</b>      </p>
+  
+         </div>
+          <div  class="col-md-8">
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.5036424042933!2d-57.58360848530328!3d-38.01203655318645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dec67072377d%3A0xc3c80a9a9de624d3!2sFacultad%20de%20Ingenier%C3%ADa!5e0!3m2!1ses!2sar!4v1650235731110!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
         </div>
+        <hr>
+        <h2>Envianos tu mensaje:</h2>
+  <div class="row">
+    <div  class="col-md-5 formulario">
 
-    
+      <form name="fvalida" action="https://formsubmit.co/lsc.icyte@gmail.com" method="POST" />
+        <p class="elform" for="Nombre">Nombre:</p>
+        <input type="text" name="name"  size="30" maxlength="100" required="true">
+        <br>
+        <br>
+        <p  class="elform" for="Apellido">Apellido:</p>
+        <input type="text" name="lname"  size="30" maxlength="100" required="true">	
+        <br> 
+        <br>
+        <p  class="elform" for="email">Correo electrónico:</p>
+        <input type="email" name="email"  size="30" maxlength="100" required="true">		
+        <br> 
+        <br>
+        <p class="elform" for="subject">Asunto:</p>
+        <input type="text" name="subject"  size="30" maxlength="100" required="true">	
+        </div>
+        <div  class="col-md-7 formulario">
+        <p class="elform" for="comments">Mensaje:</p>
+        <textarea name="comments" cols="70" rows="15" required="true"></textarea>
+        <input type="hidden" name="_next" value="https://icyte-lsc.netlify.app/pages/contacto">
+        <input type="hidden" name="_captcha" value="false">
+        <br>
+        <input type="submit" value="Enviar" onclick="valida_envia()">
+      </form>	
+</div>
+  </div>
+  </div>
     </main>
+    <footer>
+      <div class="datos-contacto">
+        <hr>
+          <p>lsc.icyte@gmail.com</p>
+      </div>
+      <div id="redes"></div>
+  </footer> 
       <!--Aca van los js-->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
       <script src="../ext/aos.js"></script> <!--para q ande el movimiento del logo icyte-->
       <script src="../js/index.js"></script><!--para q ande el movimiento del logo icyte-->
-  
+  <script src="../js/otro_index.js">
+</script>
 </body>
 </html>
