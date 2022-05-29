@@ -103,6 +103,11 @@ margin-left: 1rem;
 
      /*Publicaciones*/
 
+     .marCont{
+        margin-left: auto;
+        margin-right: auto;
+
+     }
      .sum_banner_link {
         opacity: 0;
         animation: sum_kf_aparecer_de_arriba 1s;
@@ -166,13 +171,9 @@ margin-left: 1rem;
     }
 
     /*contacto*/
-    .boton{
 
-    }
     .elform{
-        padding: 0.01rem;
-        color:blueviolet;
-        font-weight: bold;
+        padding: 1rem;
     }
     .icyte{
         text-decoration: none;
@@ -180,9 +181,8 @@ margin-left: 1rem;
         font-weight: bold;
     }
   
-    .mapa iframe{
-        padding:2px;
-        width: 40%;
+    .mapa{
+        width: 60%;
         height: auto;
     }
     .cont-proy{
@@ -190,11 +190,12 @@ margin-left: 1rem;
         margin-top:10px;
     }
 
+
+
       .proy {
      
-        padding: 20px;
+        padding: 2rem;
         text-align: center;
-        width:80%;
         background-color: rgb(252, 206, 120);
         margin-bottom: 20px;
         margin-left: auto;
@@ -203,24 +204,31 @@ margin-left: 1rem;
          box-shadow: 4px 4px 0 0;
        color:rgb(156, 155, 155);
        border-radius: 7px;
+       width:15rem;
     }
     .proy:hover {
-        padding: 20px;
+        padding: 2rem;
         text-align: center;
-        width:80%;
         background-color: rgb(253, 172, 22);
         color:rgb(250, 247, 247);
         margin-bottom: 20px;
         font-weight: bold;
-
+        width:15rem;
     }
-	
+
     .proy a{
         color:rgb(5, 5, 5);
         text-decoration: none;
         padding: 20px;
         font-weight: bold;
         font-size: 1.2rem;
+    }
+    .proy1 a{
+        color:rgb(5, 5, 5);
+        text-decoration: none;
+        padding: 20px;
+        font-weight: bold;
+        font-size: 1.5rem;
     }
 
     /*proyecto 1*/
