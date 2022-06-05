@@ -45,13 +45,29 @@ main{
   /*index*/
 
 .fig-caos img{
-    max-width: 400px;
+    width: 100%;
     height: auto;
   /*  padding: 1rem;*/
 
 }
 
+.fonLor{
+    background-image: url(../figs/ross.jfif);
+    background-attachment: fixed;
+}
+
+.sec1{
+     background-image: url(../figs/caos_mini.png);
+    background-position:center;
+    background-size: cover;
+}
+
 .seccion1{
+    background-image: url(../figs/caos3.png);
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 300hv;
     width: 100%;
     padding: 1.5rem;
@@ -61,7 +77,7 @@ main{
 }
 
 .galeria{
-    width: 50%;
+    width: 100%;
     padding: 20px;  
     margin-left: auto;
      margin-right:auto  ; 
